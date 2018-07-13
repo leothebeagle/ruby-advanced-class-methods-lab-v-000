@@ -23,7 +23,7 @@ class Song
     song.save
     song
   end
-  
+
   def save #instance method. an instance is able to add itself to the class roster that keeps track of all songs created.
     self.class.all << self
   end
