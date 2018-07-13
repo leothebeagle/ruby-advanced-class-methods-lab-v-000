@@ -52,7 +52,7 @@ class Song
   end
 
   def self.deatroy_all
-    self.all.clear 
+    self.all.clear
   end
 
 
