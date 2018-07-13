@@ -29,10 +29,7 @@ class Song
   end
 
   def self.find_or_create_by_name(name)
-    if self.find_by_name(name)
-    else
-      self.create_by_name(name)
-    end
+    self.find_by_name(name) || self.create_by_name
   end
 
   def save #instance method. an instance is able to add itself to the class roster that keeps track of all songs created.
