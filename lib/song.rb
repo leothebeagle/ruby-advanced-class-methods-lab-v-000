@@ -45,6 +45,12 @@ class Song
     song
   end
 
+  def self.create_from_filename(filename)
+    song = self.new_from_filename(filename)
+    song.save
+  end
+  
+
   def save #instance method. an instance is able to add itself to the class roster that keeps track of all songs created.
     self.class.all << self
   end
