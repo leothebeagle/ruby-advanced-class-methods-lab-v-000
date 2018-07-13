@@ -28,6 +28,10 @@ class Song
     self.all.find {|song| song.name == name}
   end
 
+  def self.find_or_create_by_name(name)
+
+  end
+
   def save #instance method. an instance is able to add itself to the class roster that keeps track of all songs created.
     self.class.all << self
   end
